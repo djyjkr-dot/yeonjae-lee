@@ -375,15 +375,21 @@ a {
 }
 
 /* ── 강의 주제 카드 ────────────────────────────────────────── */
+/* 카드가 4장이므로 2×2로 고정한다 — auto-fit 은 3열이 되면서 빈 칸이 생긴다 */
 .cards {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
+}
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 .card {
   background: var(--paper);
