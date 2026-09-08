@@ -416,15 +416,6 @@ a {
   line-height: 1.8;
 }
 
-/* 덧붙이는 한마디 — 본문보다 한 톤 낮춰 담담하게 읽히도록 */
-.card p.card-note {
-  margin-top: 1rem;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--line);
-  font-size: 0.83rem;
-  color: var(--ink-faint);
-}
-
 /* ── 출강 현장 ─────────────────────────────────────────────── */
 /* 배경만 화면 폭 전체로 확장하고, 콘텐츠 정렬은 다른 섹션과 동일하게 유지 */
 .field {
