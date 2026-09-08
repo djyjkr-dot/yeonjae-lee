@@ -10,8 +10,19 @@
 | `index.html` | 페이지 전체 구조와 내용 |
 | `styles.css` | 스타일 (깊은 숲 그린 + 아이보리 + 금빛 팔레트) |
 | `script.js` | 스크롤 등장 효과, 상단바, 연도 표시 |
-| `assets/profile.jpg` | 프로필 사진 |
+| `assets/profile.jpg` | 프로필 사진 (1200×1800, 136KB) |
+| `assets/og-card.jpg` | 카카오톡·SNS 공유용 썸네일 (1200×630) |
+| `robots.txt` · `sitemap.xml` | 검색엔진용 |
 | `vercel.json` | Vercel 배포 설정 |
+
+## 사진을 바꿀 때
+
+`assets/profile.jpg` 를 교체하면 됩니다. 파일명에 해시가 없어 내용이 바뀔 수 있으므로
+`vercel.json` 의 캐시 설정에는 일부러 `immutable` 을 쓰지 않았습니다(1시간 뒤 재검증).
+사진을 바꾸면 `assets/og-card.jpg` 도 함께 다시 만들어 주세요.
+
+공유 썸네일이 바뀌지 않으면 카카오톡·페이스북이 옛 이미지를 캐시하고 있는 것입니다.
+[Facebook 디버거](https://developers.facebook.com/tools/debug/)에서 URL을 다시 긁으면 갱신됩니다.
 
 ## 로컬에서 보기
 
