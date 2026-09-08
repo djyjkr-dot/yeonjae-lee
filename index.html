@@ -10,16 +10,36 @@
     />
     <meta name="theme-color" content="#12332F" />
     <meta name="author" content="이연재" />
+    <link rel="canonical" href="https://yeonjae-lee.vercel.app/" />
 
-    <meta property="og:type" content="website" />
+    <!-- 카카오톡·페이스북 등의 크롤러는 상대경로 이미지를 해석하지 못하므로 절대 URL을 쓴다 -->
+    <meta property="og:type" content="profile" />
     <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="이연재" />
+    <meta property="og:url" content="https://yeonjae-lee.vercel.app/" />
     <meta property="og:title" content="이연재 | 예방교육 강사" />
     <meta
       property="og:description"
       content="말하기 어려운 주제를, 가장 안전하게. 성교육·중독예방·성품교육 강사 이연재."
     />
-    <meta property="og:image" content="assets/profile.jpg" />
+    <meta
+      property="og:image"
+      content="https://yeonjae-lee.vercel.app/assets/og-card.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="이연재 · 예방교육 강사" />
+
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="이연재 | 예방교육 강사" />
+    <meta
+      name="twitter:description"
+      content="말하기 어려운 주제를, 가장 안전하게. 성교육·중독예방·성품교육 강사 이연재."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yeonjae-lee.vercel.app/assets/og-card.jpg"
+    />
 
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312332F'/%3E%3Ctext x='16' y='22' font-size='17' font-family='serif' fill='%23E9C48B' text-anchor='middle'%3E연%3C/text%3E%3C/svg%3E" />
 
@@ -30,6 +50,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "이연재",
+        "alternateName": "Yeonjae Lee",
+        "url": "https://yeonjae-lee.vercel.app/",
+        "image": "https://yeonjae-lee.vercel.app/assets/profile.jpg",
+        "email": "mailto:djyjkr@gmail.com",
+        "jobTitle": "예방교육 강사",
+        "description": "성교육·성폭력예방, 중독예방, 성품·관계 교육, 부모교육을 진행하는 예방교육 강사.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "바움사회적협동조합 바움성품연구소"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "서울사이버대학교 상담심리학과"
+        },
+        "knowsAbout": [
+          "성교육",
+          "성폭력 예방교육",
+          "중독 예방교육",
+          "마약 예방교육",
+          "도박 중독 예방",
+          "성품 교육",
+          "부모 교육"
+        ],
+        "areaServed": ["서울", "경기", "인천"],
+        "sameAs": [
+          "https://growing-day-by-day.tistory.com/",
+          "https://alwaysgrowing-story.tistory.com/"
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -73,9 +129,10 @@
           <img
             src="assets/profile.jpg"
             alt="예방교육 강사 이연재 프로필 사진"
-            width="720"
-            height="900"
+            width="1200"
+            height="1800"
             loading="eager"
+            fetchpriority="high"
           />
           <figcaption>
             이연재 · 바움사회적협동조합 바움성품연구소 전임강사
